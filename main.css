@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 42px;
+    background-color: orange;
+    display: flex;
+    border-radius: 2px;
+}
+
+.container .left_nav_items {
+    display: flex;
+    flex: auto;
+}
+
+.container .right_nav_items {
+    display: flex;
+    flex: initial;
+}
+.container .right_nav_items .right_links {
+    background-color: yellow;
+    display: flex;
+}
+
+.container .left_nav_items .logo {
+    display: flex;
+    margin: 10px;
+    width: 215px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left_nav_items .left_links {
+    background-color: yellow;
+    display: flex;
+}
+
+.container .left_nav_items .left_links .link1 {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.container .left_nav_items .left_links .link2 {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.container .right_nav_items .link3 {
+    display: flex;
+    margin: 10px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right_nav_items .link4 {
+    display: flex;
+    margin: 10px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.left_nav_items > a {
+    cursor: pointer;
+}
+
+.left_links a:hover {
+    background-color: mintcream;
+    color: red;
+}
+
+.right_links a:hover {
+    background-color: mintcream;
+    color: red;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        font-size: 28px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        margin: 7px;
+    }
+    
+    .dropdown:hover {
+        background-color: lightskyblue;
+    }
+
+    .left_links a {
+        display: none;
+    }
+
+    .right_links a {
+        display: none;
+    }
+
+    .container .left_nav_items .logo {
+        display: flex;
+        margin: 10px;
+        width: 150px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
