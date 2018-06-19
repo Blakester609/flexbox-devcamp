@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 42px;
+    background-color: #7ca1dd;
+    display: flex;
+    border-radius: 2px;
+}
+
+.container a:visited {
+    color: white;
+}
+
+.container .left_nav_items {
+    display: flex;
+    flex: auto;
+}
+
+.container .right_nav_items {
+    display: flex;
+    flex: initial;
+}
+.container .right_nav_items .right_links {
+    background-color: #2576f9;
+    display: flex;
+}
+
+.container .left_nav_items .logo {
+    display: flex;
+    margin: 10px;
+    width: 215px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left_nav_items .left_links {
+    background-color: #2576f9;
+    display: flex;
+}
+
+.container .left_nav_items .left_links .link-left {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.container .right_nav_items .link-right {
+    display: flex;
+    margin: 10px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.left_nav_items > a {
+    cursor: pointer;
+}
+
+.left_links a:hover {
+    background-color: mintcream;
+    color: darkslateblue;
+}
+
+.right_links a:hover {
+    background-color: mintcream;
+    color: darkslateblue;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .dropdown-menu .dropdown-link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        font-size: 28px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        margin: 7px;
+    }
+    
+    .left-dropdown {
+        width: 70px;
+    }
+    
+    .left-dropdown:hover {
+        background-color: #7ca1dd;
+    }
+
+
+    .left_links a {
+        display: none;
+    }
+
+    .right_links a {
+        display: none;
+    }
+
+    .container .left_nav_items .logo {
+        display: flex;
+        margin: 10px;
+        width: 150px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #dropdown-menu .dropdown-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7ca1dd;
+        height: 42px;
+        text-decoration: none;
+        width: 100vw;
+    }
+
+    #dropdown-menu .dropdown-link:hover {
+        background-color: mintcream;
+        color: darkslateblue;
+    }
+}
